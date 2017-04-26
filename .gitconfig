@@ -1,0 +1,5 @@
+[user]
+	name = Alexey Kuchik
+	email = aleksey.kuchik@gmail.com
+[push]
+	default = simple
