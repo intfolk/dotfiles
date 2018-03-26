@@ -1,0 +1,413 @@
+
+# 2018-03-19 14:03:07.715663
++select * from commerce_product
+
+# 2018-03-19 14:03:20.117468
++\d
+
+# 2018-03-19 14:03:25.372435
++exit
+
+# 2018-03-19 14:03:54.743436
++select * from commerce_product
+
+# 2018-03-19 14:05:01.297919
++select code, name, description, sku from commerce_product
+
+# 2018-03-19 14:05:55.600592
++select code, name, trays from commerce_product
+
+# 2018-03-19 14:06:44.762747
++select code, name, trays from commerce_product where name like 'impr'
+
+# 2018-03-19 14:06:50.279426
++select code, name, trays from commerce_product where name like 'impr%'
+
+# 2018-03-19 14:07:23.236499
++select code, name, trays from commerce_product
+
+# 2018-03-19 14:07:33.928684
++select code, name, trays from commerce_product where code like 'impr%'
+
+# 2018-03-19 14:08:40.811192
++select code, name, trays from commerce_product where code like 'impr%'
++
+
+# 2018-03-19 14:08:58.474741
++select
++    code, name, trays
+
+# 2018-03-19 14:10:19.147514
++select
++    code, name, trays, includes
++from    
++    commerce_product
++where code like 'impr%'
+
+# 2018-03-19 14:11:56.633823
++select
++    code, name, trays, includes_ipr, ecommerce, medical, product_category_id
++from    
++    commerce_product
++where code like 'impr%'
+
+# 2018-03-19 17:26:04.141563
++select
++    code, name, trays, includes_ipr, ecommerce, medical, product_category_id
++from    
++    commerce_product
++where code like 'putty%'
+
+# 2018-03-19 17:27:31.406727
++select
++    code, name, trays, includes_ipr, ecommerce, medical, product_category_id, date_removed
++from    
++    commerce_product
++where code like 'putty%'
+
+# 2018-03-20 11:37:45.420405
++select * from commerce_product_category
+
+# 2018-03-20 11:51:23.218245
++select
++    code, name, trays, includes_ipr, ecommerce, medical, product_category_id, date_removed
++from    
++    commerce_product
++where code like 'putty%'
+
+# 2018-03-20 12:19:10.859382
++select
++    code, name, category, includes_ipr, ecommerce, medical, product_category_id, date_removed
++from    
++    commerce_product
++where code like 'putty%'
+
+# 2018-03-20 12:24:43.262136
++select * from pyrunner_script
+
+# 2018-03-20 12:25:08.833625
++select id, filename from pyrunner_script
+
+# 2018-03-20 12:25:18.823854
++select * from pyrunner_script
+
+# 2018-03-20 12:25:28.143807
++select id, file_name from pyrunner_script
+
+# 2018-03-20 12:25:41.391225
++select id, file_name from pyrunner_script order by id desc
+
+# 2018-03-20 12:26:17.907011
++delete from pyrunner_script wher id >= 237
+
+# 2018-03-20 12:26:26.587022
++delete from pyrunner_script where id >= 237
+
+# 2018-03-20 12:26:31.004846
++select id, file_name from pyrunner_script order by id desc
+
+# 2018-03-20 12:28:53.218370
++select
++    code, name, category, includes_ipr, ecommerce, medical, product_category_id, date_removed
++from    
++    commerce_product
++where code like 'putty%'
+
+# 2018-03-21 12:08:14.894081
++select
++    id, code, name, category, includes_ipr, ecommerce, medical, product_category_id, date_removed
++from    
++    commerce_product
++where code like 'putty%'
+
+# 2018-03-21 12:08:35.189273
++select * from order_item where product_id = 559
+
+# 2018-03-21 12:08:54.871626
++select * from commerce_order_item where product_id = 559
+
+# 2018-03-21 12:09:26.344171
++select order_id from commerce_order_item where product_id = 559
+
+# 2018-03-21 12:10:09.235895
++select
+
+# 2018-03-21 12:10:13.666918
++select 
+
+# 2018-03-21 12:12:20.095375
++exit()
+
+# 2018-03-21 12:12:23.373129
++exit
+
+# 2018-03-21 12:13:43.912446
++select *
++from cases_case
++limit 10;
+
+# 2018-03-21 12:14:31.402989
++exit
++
+
+# 2018-03-21 12:16:56.404426
++select number from commerce_order co
++join commerce_order_item coi on coi.order_id = co.id
++join commerce_product ON commerce_product.id = coi.product_id
++WHERE commerce_product.name = 'putty'
+
+# 2018-03-21 12:17:13.000664
++select number from commerce_order co
++join commerce_order_item coi on coi.order_id = co.id
++join commerce_product ON commerce_product.id = coi.product_id
++WHERE commerce_product.name = 'PUTTY'
+
+# 2018-03-21 12:17:33.760868
++select * from products order by id desc limit 10
+
+# 2018-03-21 12:17:46.039833
++select * from commerce_product order by id desc limit 10
+
+# 2018-03-21 12:18:45.760464
++exit
++
++
+
+# 2018-03-21 12:19:52.439112
++select number from commerce_order co
++join commerce_order_item coi on coi.order_id = co.id
++join commerce_product ON commerce_product.id = coi.product_id
++WHERE commerce_product.name = 'PUTTY';
+
+# 2018-03-21 12:21:40.274114
++select number from commerce_order co
++join commerce_order_item coi on coi.order_id = co.id
++join commerce_product ON commerce_product.id = coi.product_id
++WHERE commerce_product.code = 'putty';
+
+# 2018-03-21 12:23:17.479708
++select number from commerce_order co
++join commerce_order_item coi on coi.order_id = co.id
++join commerce_product ON commerce_product.id = coi.product_id
++join cases_case ON cases_case.id = co.case_id
++WHERE commerce_product.code = 'putty';
+
+# 2018-03-21 12:23:24.659578
++select number from commerce_order co
++join commerce_order_item coi on coi.order_id = co.id
++join commerce_product ON commerce_product.id = coi.product_id
++join cases_case ON cases_case.id = co.case_id
++WHERE commerce_product.code = 'putty'
+
+# 2018-03-21 12:28:10.822642
++select cases_case_event_log.* from commerce_order co
++join commerce_order_item coi on coi.order_id = co.id
++join commerce_product ON commerce_product.id = coi.product_id
++join cases_case ON cases_case.id = co.case_id
++join cases_case_event_log ON cases_case_event_log.case_id = cases_case.id 
++WHERE commerce_product.code = 'putty';
+
+# 2018-03-21 12:28:54.465503
++select co.number, cases_case_event_log.* from commerce_order co
++join commerce_order_item coi on coi.order_id = co.id
++join commerce_product ON commerce_product.id = coi.product_id
++join cases_case ON cases_case.id = co.case_id
++join cases_case_event_log ON cases_case_event_log.case_id = cases_case.id 
++WHERE commerce_product.code = 'putty';
+
+# 2018-03-21 12:44:35.840942
++select * from workflow_event;
+
+# 2018-03-21 12:58:51.951746
++select * from workflow_event order by id;
+
+# 2018-03-21 16:26:51.356380
++select * from commerce_product
++;
+
+# 2018-03-21 16:27:32.505945
++select kind from commerce_order
++;
+
+# 2018-03-21 16:31:52.820200
++select order_kind from commerce_order
++;
+
+# 2018-03-21 16:32:08.003971
++select order_kind from commerce_order
++limit 10 order by id desc;
+
+# 2018-03-21 16:32:18.242143
++select order_kind from commerce_order
++order by id desc;
+
+# 2018-03-21 16:32:36.658657
++select order_kind from commerce_order
++order by id desc
++limit 10;
+
+# 2018-03-21 17:40:40.139963
++select * from workflow_event order by id;
+
+# 2018-03-22 13:55:19.622215
++select * from operations_shipment_batch order by id desc limit 10;
+
+# 2018-03-22 17:27:18.060376
++select * from workflow_event order by id;
+
+# 2018-03-22 17:29:24.179207
++selec * from commerce_product;
+
+# 2018-03-22 17:29:28.573954
++select * from commerce_product;
+
+# 2018-03-22 17:29:40.800509
++select code, description from commerce_product;
+
+# 2018-03-22 17:30:15.827197
++select code, description from commerce_product where code='imprrtk';
+
+# 2018-03-23 12:13:07.667969
++select * from workflow_event order by id;
+
+# 2018-03-23 13:36:56.047668
++select * from operations_shipment order by id desc limit 10;
+
+# 2018-03-23 13:37:43.116096
++select id, uuid, date_created from operations_shipment order by id desc limit 10;
+
+# 2018-03-23 14:47:11.904240
++select os.uuid, coi.number from operations_shipment os
++join operations_fulfillment ON operations_fulfillment.id = operations_shipment.fulfillment_id
++join commerce_order_item ON commerce_order_item.id = operations_fulfillment.order_item_id;
++
+
+# 2018-03-23 14:47:31.794584
++select os.uuid, coi.number from operations_shipment os
++join operations_fulfillment ON operations_fulfillment.id = os.fulfillment_id
++join commerce_order_item ON commerce_order_item.id = operations_fulfillment.order_item_id;
++
+
+# 2018-03-23 14:47:57.914965
++select os.uuid, coi.number from operations_shipment os
++join operations_fulfillment ON operations_fulfillment.id = os.fulfillment_id
++join commerce_order_item coi ON oi.id = operations_fulfillment.order_item_id;
++
+
+# 2018-03-23 14:48:16.877960
++select os.uuid, coi.number from operations_shipment os
++join operations_fulfillment ON operations_fulfillment.id = os.fulfillment_id
++join commerce_order_item coi ON coi.id = operations_fulfillment.order_item_id;
++
+
+# 2018-03-23 14:53:28.871975
++select os.uuid, co.number from operations_shipment os
++join operations_fulfillment ON operations_fulfillment.id = os.fulfillment_id
++join commerce_order_item coi ON coi.id = operations_fulfillment.order_item_id
++join commerce_order co ON commerce_order.id = coi.order_id;
++
+
+# 2018-03-23 14:53:48.175600
++select os.uuid, co.number from operations_shipment os
++join operations_fulfillment ON operations_fulfillment.id = os.fulfillment_id
++join commerce_order_item coi ON coi.id = operations_fulfillment.order_item_id
++join commerce_order co ON co.id = coi.order_id;
++
+
+# 2018-03-23 14:54:04.492687
++select os.uuid, co.number from operations_shipment os
++join operations_fulfillment ON operations_fulfillment.id = os.fulfillment_id
++join commerce_order_item coi ON coi.id = operations_fulfillment.order_item_id
++join commerce_order co ON co.id = coi.order_id
++
+
+# 2018-03-23 14:56:02.941077
++select os.uuid, co.number from operations_shipment os
++join operations_fulfillment ON operations_fulfillment.id = os.fulfillment_id
++join commerce_order_item coi ON coi.id = operations_fulfillment.order_item_id
++join commerce_product cp ON cp.id = coi.product_id
++join commerce_order co ON co.id = coi.order_id
++where cp.code = 'putty';
++
+
+# 2018-03-23 15:03:08.120648
++select * from workflow_event order by id;
+
+# 2018-03-23 15:06:31.524022
++select * from workflow_status_category;
+
+# 2018-03-23 15:15:29.077901
++select * from cases_case_event_log order by id desc limit 20;
+
+# 2018-03-23 15:19:12.404461
++delete * from cases_case_event_log where event_id = 'PUTTYPURCH'
++;
+
+# 2018-03-23 15:19:24.846753
++delete from cases_case_event_log where event_id = 'PUTTYPURCH';
+
+# 2018-03-23 15:26:24.076963
++select * from workflow_status_category;
+
+# 2018-03-23 15:26:34.246107
++select * from workflow_event order by id;
+
+# 2018-03-23 15:26:41.335448
++select * from workflow_event order by id desc limit 10;
+
+# 2018-03-23 15:35:40.476613
++select os.uuid, co.number from operations_shipment os
++join operations_fulfillment ON operations_fulfillment.id = os.fulfillment_id
++join commerce_order_item coi ON coi.id = operations_fulfillment.order_item_id
++join commerce_product cp ON cp.id = coi.product_id
++join commerce_order co ON co.id = coi.order_id
++where cp.code = 'putty';
++
+
+# 2018-03-23 15:38:18.615781
++select * from workflow_status_category order by kind;
+
+# 2018-03-23 15:46:12.023355
++select os.uuid, co.number from operations_shipment os
++join operations_fulfillment ON operations_fulfillment.id = os.fulfillment_id
++join commerce_order_item coi ON coi.id = operations_fulfillment.order_item_id
++join commerce_product cp ON cp.id = coi.product_id
++join commerce_order co ON co.id = coi.order_id
++where cp.code = 'putty';
++
+
+# 2018-03-23 16:06:55.402482
++select * from operations_carrier order by id desc limit 20;
+
+# 2018-03-23 16:07:31.382533
++select * from operations_shipment order by id desc limit 10;
+
+# 2018-03-23 16:07:49.155407
++select * from operations_shipment order by id desc limit 1;
+
+# 2018-03-23 16:09:05.518968
++select * from operations_carrier order by id desc limit 20;
+
+# 2018-03-23 16:09:39.027433
++update operations_shipment set carrier_id=4 where id = 216312;
+
+# 2018-03-26 13:18:01.091892
++select * from cases_prescription limit 10;
+
+# 2018-03-26 14:02:54.452058
++select lab_case_id from commerce_order co
++join cases_case ON cases_case.id = co.case_id
++join cases_prescription ON cases_prescription.id = cases_case.current_prescription_id
++where co.number = 'S1803-b2bd340ce8c35';
+
+# 2018-03-26 14:03:38.514437
++select cases_prescription.* from commerce_order co
++join cases_case ON cases_case.id = co.case_id
++join cases_prescription ON cases_prescription.id = cases_case.current_prescription_id
++where co.number = 'S1803-b2bd340ce8c35';
+
+# 2018-03-26 14:06:40.161980
++select lab_case_id from commerce_order co
++join cases_case ON cases_case.id = co.case_id
++join cases_prescription ON cases_prescription.id = cases_case.current_prescription_id
++where co.number = 'S1803-b2bd340ce8c35';
