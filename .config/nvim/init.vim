@@ -39,13 +39,13 @@ inoremap <c-s> <c-o>:update<CR>
 
 " Quick quit command
 noremap <Leader>e :quit<CR>	" Quit current window
-noremap <Leader>E :qa!<CR>	" Quit all windows 
+noremap <Leader>E :qa!<CR>	" Quit all windows
 
 " Bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w
 " + <movement>
 map <c-j> <c-w>j
-map <c-k> <c-w>k 
-map <c-l> <c-w>l 
+map <c-k> <c-w>k
+map <c-l> <c-w>l
 map <c-h> <c-w>h
 
 " Easier moving between tabs
@@ -56,7 +56,6 @@ map <Leader>t <esc>:tabnew<CR>
 
 " Map sort function to a key
 vnoremap <Leader>s :sort<CR>
-
 
 " Easier moving of code blocks
 vnoremap < <gv " better indentation
