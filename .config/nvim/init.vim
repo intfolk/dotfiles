@@ -12,9 +12,12 @@ call plug#end()
 " Automatic reloading of init.vim
 autocmd! bufwritepost init.vim source %
 
+" Truecolor
+set termguicolors
+
 " Better copy and paste
 set pastetoggle=<F2>
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Mouse and backspace
 set mouse=a
@@ -94,33 +97,20 @@ set list
 
 " Ignore folders for ctrl-p
 set wildignore+=*/node_modules/*,*/.git/*,*/.hg/*,*/.svn/*
+let g:ctrlp_working_path_mode = 'ra'
 
-let g:python_host_prog = '/Users/mac-168/.virtualenvs/nvim_python2/bin/python'
-let g:python3_host_prog = '/Users/mac-168/.virtualenvs/nvim_python3/bin/python'
+" let g:python_host_prog = 'python'
+" let g:python3_host_prog = 'python3'
 " let g:loaded_python_provider = 1
 " let g:loaded_python3_provider = 0
-
-" found here: http://stackoverflow.com/a/2170800/70778
-function! OmniPopup(action)
-    if pumvisible()
-        if a:action == 'j'
-            return "\<C-N>"
-        elseif a:action == 'k'
-            return "\<C-P>"
-        endif
-    endif
-    return a:action
-endfunction
-inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
-inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 
 " Plugins config
 colorscheme Tomorrow-Night-Eighties
 
 let g:airline_theme='base16_eighties'
 
-let g:pymode = 1
-let g:pymode_python = 'python3'
+" let g:pymode = 1
+" let g:pymode_python = 'python3'
 
 
 " Settings for python-mode
